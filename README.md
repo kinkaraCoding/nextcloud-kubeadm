@@ -182,7 +182,6 @@ Put your correct domain in both host sections for `host: nextcloud.example.com`a
 
 ``` shell
 cat <<EOF | kubectl apply -f -
-cat <<EOF | kubectl apply -f -
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -216,6 +215,5 @@ spec:
             name: nextcloud-adminer
             port:
               number: 8080
-EOF
 EOF
 ```
